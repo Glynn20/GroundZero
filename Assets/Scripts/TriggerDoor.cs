@@ -27,8 +27,8 @@ public class TriggerDoor : MonoBehaviour
         if (Triggered == false && other.gameObject.tag == "Player")
         {
             Triggered = true;
-            Door.GetComponent<DoorLock>().UnlockedCount++;
-            Door.GetComponent<DoorLock>().LockCheck();
+            //Door.GetComponent<DoorLock>().UnlockedCount++;
+            //Door.GetComponent<DoorLock>().LockCheck();
         }
     }
 

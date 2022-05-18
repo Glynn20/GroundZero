@@ -17,7 +17,7 @@ public class LevelManager : MonoBehaviour
     void Start()
     {
         highScore = PlayerPrefs.GetInt("HIGHSCORE");
-        highScoreText.text = "High Score: " + highScore;
+//        highScoreText.text = "High Score: " + highScore;
     }
 
     // Update is called once per frame
@@ -25,9 +25,9 @@ public class LevelManager : MonoBehaviour
     {
 
         health = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerDamage>().health;
-        scoreText.text = "Score: " + score;
-        healthText.text = "Health: " + health;
-        Debug.Log(health);
+//        scoreText.text = "Score: " + score;
+        //healthText.text = "Health: " + health;
+//        Debug.Log(health);
 
         if(highScore < score)
         {
